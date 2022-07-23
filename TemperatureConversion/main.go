@@ -30,15 +30,15 @@ func main() {
 	var convertTo string
 
 	for continueToConversion == true {
-		fmt.Println(" Welcome to the temperature type conversion program ^-^ !! ")
+		fmt.Println(" \nWelcome to the temperature type conversion program (づ｡◕‿‿◕｡)づ !! ")
 
-		fmt.Print(" What is the type of your temperature ? (f/k/c) ")
+		fmt.Print(" What is the type of your temperature ? (f/k/c) ◔ ⌣ ◔ ")
 		fmt.Scanln(&tempType)
 
-		fmt.Print(" What is your temperature in degrees? ")
+		fmt.Print(" What is your temperature in degrees? ◔ ⌣ ◔ ")
 		fmt.Scanln(&usersDegree)
 
-		fmt.Print(" Which type of temperature do you want to convert to? (f/k/c) ")
+		fmt.Print(" Which type of temperature do you want to convert to? (f/k/c) ◔ ⌣ ◔ ")
 		fmt.Scanln(&convertTo)
 
 		if tempType == "f" {
@@ -47,7 +47,7 @@ func main() {
 			} else if convertTo == "c" {
 				fmt.Println(FahrenheitToCelsius(Fahrenheit(usersDegree)))
 			} else {
-				fmt.Println("Please enter a valid type to convert, program is terminated")
+				fmt.Println("Please enter a valid type to convert, program is terminated (¬_¬)")
 			}
 
 		} else if tempType == "k" {
@@ -56,7 +56,7 @@ func main() {
 			} else if convertTo == "c" {
 				fmt.Println(KelvinToCelcius(Kelvin(usersDegree)))
 			} else {
-				fmt.Println("Please enter a valid type to convert, program is terminated")
+				fmt.Println("Please enter a valid type to convert, program is terminated (¬_¬)")
 			}
 
 		} else if tempType == "c" {
@@ -65,17 +65,18 @@ func main() {
 			} else if convertTo == "k" {
 				fmt.Println(CelsiusToKelvin(Celsius(usersDegree)))
 			} else {
-				fmt.Println("Please enter a valid type to convert, program is terminated")
+				fmt.Println("Please enter a valid type to convert, program is terminated (¬_¬)")
 			}
 
 		} else {
-			fmt.Println("Please enter a valid temperature type !")
+			fmt.Println("Please enter a valid temperature type ! (¬_¬)")
 		}
 
-		fmt.Print("Do you want to continue to conversion? (yes/no) ")
+		fmt.Print("Do you want to continue to conversion? (yes/no) (｡◕‿◕｡) ")
 		fmt.Scanln(&usersRequest)
 		if usersRequest == "no" {
 			continueToConversion = false
+			fmt.Println("Goodbye ! (◕‿◕✿)")
 		}
 	}
 

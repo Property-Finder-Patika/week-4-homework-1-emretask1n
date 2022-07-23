@@ -11,12 +11,12 @@ import (
 func main() {
 	//WalkDir Func
 	var dirPath string
-	fmt.Println("\nWelcome to the List Files program")
+	fmt.Println("\nWelcome to the List Files program (◕‿◕✿)")
 	fmt.Println("Example for path to list of files => C:\\Users\\e-tas\\Desktop\\week-4-homework-1-emretask1n")
 	fmt.Println("Please enter a valid directory:")
 	_, err := fmt.Scanf("%s", &dirPath)
 	if err != nil {
-		fmt.Println("That is not a valid directory!")
+		fmt.Println("That is not a valid directory! ಠ_ಠ")
 		os.Exit(0)
 	}
 	err2 := filepath.WalkDir(dirPath,
