@@ -69,7 +69,7 @@ func main() {
 			}
 
 		} else {
-			fmt.Println("Please enter a valid temperature type first!")
+			fmt.Println("Please enter a valid temperature type !")
 		}
 
 		fmt.Print("Do you want to continue to conversion? (yes/no) ")
